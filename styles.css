@@ -232,7 +232,7 @@ header {
     /* background-image: url('./images/map.jpg');
     background-size: cover;
     background-position: center; */
-    background: var(--body-text);
+    background: var(--para-text);
 }
 .feature-list
 {
@@ -257,7 +257,7 @@ header {
 }
 .feature-item
 {
-    margin-right: 20px;
+    margin: 0 20px;
     background-color: var(--button-color2);
     color: var(--body-text);
     padding: 20px;   
@@ -322,11 +322,13 @@ header {
     font-size: 1.2rem;
     color: var(--para-text);
     margin-bottom: 10px;
+    font-weight: 800;
 }
 
 .faq-item p {
     font-size: 1rem;
     color: #333333;
+    font-weight: 500;
 }
 
 /* @keyframes appear{
