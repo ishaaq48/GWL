@@ -1,11 +1,12 @@
 
 :root{
-    --back-color:linear-gradient(to right, #e0f7fa, #b2ebf2);;
+    --back-color:#EDE7E6;
     --head-text:#01579b;
-    --body-text:#333333;
+    --body-text:#000000;
+    --para-text: #1E2325;
     --content-box:#ffffff;
     --button-color:#00796b;
-    --button-color2:#26a69a;
+    --button-color2:#82C6DF;
 }
 
 /* .raleway-<hello> {
@@ -88,16 +89,18 @@ header {
     
     width: 100%;
 }
-/* .wrapper{
-    background-image: url('./images/hero.jpg');
+.wrapper{
+    background-image: url('./images/hero_bg3.jpg');
     background-size: cover;
     background-position: center;
+    margin-top: 8vh;
     height: 100vh;
-} */
-.wrapper
+    overflow: visible;
+}
+/* .wrapper
 {
     background: var(--body-text);
-}
+} */
 #hero
 {
     display: flex;
@@ -119,18 +122,18 @@ header {
     margin-bottom: 30px;
 }
 #hero h1 {
-    color: white; /* Main heading color */
+    color: var(--content-box); /* Main heading color */
     font-size: 2rem; /* Adjust as needed */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow */
 }
 #hero p {
     color: var(--content-box);
     font-size: 1.5rem; 
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 .hero-button {
-    background-color: var(--button-color2);
-    color: #fff;
+    background-color: var(--body-text);
+    color: var(--back-color);
     margin: 20px;
     padding: 12px 24px;
     text-decoration: none;
@@ -141,7 +144,7 @@ header {
 }
 .hero-button:hover
 {
-    background-color: var(--button-color);
+    background-color: var(--para-text);
 }
 #chatbot-icon {
     position: fixed;
@@ -163,7 +166,7 @@ header {
 }
 
 #intro-section {
-    background-color: #e0f7fa; /* Your chosen background color */
+    background-color: #82C6DF; /* Your chosen background color */
     padding: 50px 0;
     text-align: center;
 }
@@ -188,13 +191,13 @@ header {
 }
 
 .intro-text h2 {
-    color: #01579b; /* Header text color */
+    color: var(--body-text); /* Header text color */
     font-size: 2em;
     margin-bottom: 15px;
 }
 
 .intro-text p {
-    color: #333333; /* Body text color */
+    color: var(--para-text); /* Body text color */
     font-size: 1.1em;
     line-height: 1.6;
 }
@@ -212,7 +215,7 @@ header {
 }
 
 .stat-item h3 {
-    color: #00796b; /* Primary color for numbers */
+    color: #1E2325; /* Primary color for numbers */
     font-size: 1.8em;
     margin: 10px 0;
 }
@@ -229,7 +232,7 @@ header {
     /* background-image: url('./images/map.jpg');
     background-size: cover;
     background-position: center; */
-    background: var(--back-color);
+    background: var(--body-text);
 }
 .feature-list
 {
@@ -243,7 +246,7 @@ header {
 }
 #features h2
 {
-    color: var(--body-text);
+    color: var(--back-color);
     text-align: center;
 }
 #features h3
@@ -278,7 +281,7 @@ header {
 .feature-item a
 {
     text-decoration: none;
-    background-color: var(--button-color2);
+    background-color:var(--body-text);
     color: #fff;
     padding: 10px;
     border-radius: 6px;
@@ -294,42 +297,30 @@ header {
 {
     text-align: center;
 }
-#faq
-{
-    
-    background: var(--back-color);
-}
-
-#faq h2
-{
-    text-align: center;
-    color: var(--body-text);
-}
-
 
 #faq {
     padding: 40px;
-    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    background: var(--button-color2);
     text-align: left;
 }
 
 #faq h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #01579b;
+    color: var(--body-text);
 }
 
 .faq-item {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--back-color);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item h3 {
     font-size: 1.2rem;
-    color: #00796b;
+    color: var(--para-text);
     margin-bottom: 10px;
 }
 
