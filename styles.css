@@ -8,6 +8,15 @@
     --button-color2:#26a69a;
 }
 
+/* :root {
+    --back-color: #263238; 
+    --head-text: #82b1ff; 
+    --body-text: #e0e0e0; 
+    --content-box: #37474f; 
+    --button-color: #26a69a; 
+    --button-color2: #80cbc4; 
+} */
+
 
 *{
     margin: 0;
@@ -20,15 +29,42 @@ html
     scroll-behavior: smooth;
 }
 
-header{
+/* header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
     gap: 20px;
-    /* background-color: slateblue; */
+   
     
+} */
+
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: var(--back-color); */
+    z-index: 1000; 
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); 
 }
 
+.logo-container {
+    display: flex;
+    align-items: center; 
+}
+.logo-container img {
+    width: 50px;
+    margin-right: 10px; 
+}
+.navigation {
+    display: flex;
+    gap: 20px; 
+}
 .navigation a
 {
     text-decoration: none;
@@ -37,7 +73,6 @@ header{
     position: relative;
     padding: 0 5px;
     text-align: center;
-    
 }
 .navigation a::after
 {
