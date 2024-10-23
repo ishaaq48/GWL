@@ -5,7 +5,7 @@
     --body-text:#333333;
     --content-box:#ffffff;
     --button-color:#00796b;
-    --button-color2:#a5d6a7;
+    --button-color2:#26a69a;
 }
 
 
@@ -82,7 +82,7 @@ header{
     margin-bottom: 30px;
 }
 .hero-button {
-    background-color: #28a745; /* Green color for the button */
+    background-color: #26a69a;
     color: #fff;
     margin: 20px;
     padding: 12px 24px;
@@ -196,7 +196,7 @@ h2
 {
     text-decoration: none;
     color: #fff;
-    background-color: var(--button-color);
+    background-color: var(--button-color2);
     padding: 10px;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
