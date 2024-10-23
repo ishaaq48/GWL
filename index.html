@@ -7,26 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Groundwater Level Predictor</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <div class="logo-container">
-                <img src="./images/recycling.gif" alt="">
-                <h2>Logo</h2>
+                <img src="./images/location.png" alt="">
+                <h2>HydroScope</h2>
             </div>
             
-            <nav class="navigation">
-                <a href="">Home</a>
-                <a href="#about">Intro</a>
-                <a href="#features">Features</a>
-                <a href="#stats">Stats</a>
-                <a href="#faq">FAQ</a>
-                
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">Intro</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
             </nav>   
         </header>
-        <div class="hero">
+        <div id="hero">
             <div class="hero-content">
                 <h1>Predict and Monitor Groundwater Levels Across India</h1>
                 <p>Stay informed with accurate data and insights to manage water resources efficiently.</p>
@@ -42,31 +45,39 @@
                 <div class="about-item">
                     <h3>What is Groundwater?</h3>
                     <p>Groundwater is a vital water source for ecosystems, agriculture, and daily use.</p>
-                    <img src="./images/aquifer.png" alt="">
+                    <img src="./images/aquifer.png" alt="" width="50px">
                 </div>
                 <div class="about-item">
                     <h3>The Problem</h3>
                     <p>Challenges like over-extraction, pollution, and seasonal changes make managing groundwater difficult.</p>
-                    <img src="./images/pollution.png" alt="">
+                    <img src="./images/pollution.png" alt="" width="50px"> 
+                    
                 </div>
                 <div class="about-item">
                     <h3>Why Our Application?</h3>
                     <p>Our tool offers accurate predictions, trend analysis, and interactive maps to help monitor and manage groundwater levels effectively.</p>
-                    <img src="./images/growth.png" alt="">
+                    <img src="./images/growth.png" alt=""  width="50px">
                 </div>
                 <div class="about-item">
                     <h3>How it works</h3>
                     <p>Uses machine learning and historical data to provide insights into groundwater conditions.</p>
-                    <img src="./images/humanoid.png" alt="">
+                    <img src="./images/humanoid.png" alt="" width="50px">
                 </div>
                 
                 <div class="about-item">
                     <h3>Who Can Benefit?</h3>
                     <p>Ideal for farmers, researchers, policymakers, and anyone concerned with water management.</p>
-                    <img src="./images/farmer.png" alt="">
+                    <img src="./images/farmer.png" alt="" width="50px"> 
                 </div>
             </div>
-            
+            <!-- <div class="about-img"> -->
+                
+                <!-- <img src="./images/pollution.png" alt=""> -->
+                <!-- <img src="./images/climate-change.png" alt="">
+                <img src="./images/growth.png" alt="">
+                <img src="./images/humanoid.png" alt="">
+                <img src="./images/farmer.png" alt="">
+            </div> -->
         </div>
         <div id="features">
             <h2>Features</h2>
@@ -95,25 +106,44 @@
             <p>Enter your state and district to zoom in on the map and view detailed groundwater data.</p>
             <a href="#Analysis" class="learn-more">Learn More</a>
         </div>
-        <!-- <div class="feature-item">
-            <h3>Location-Based Information</h3>
-            <p>Get specific insights on groundwater levels for your selected area.</p>
-        </div>
-        <div class="feature-item">
-            <h3>Chatbot Assistance</h3>
-            <p>Instant support to answer your questions and guide you through the app.</p>
-        </div> -->
+        
     </div>
         </div>
-        <div id="stats">
-            <h2>Stats</h2>
-        </div>
         <div id="faq">
-            <h2>FAQ</h2>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is HydroScope?</h3>
+                <p>HydroScope is a web-based tool that helps users predict and monitor groundwater levels across various regions in India. It uses historical data and machine learning algorithms to provide insights into groundwater conditions.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does HydroScope predict groundwater levels?</h3>
+                <p>HydroScope leverages machine learning models trained on historical data, climate conditions, and other relevant factors to predict groundwater level trends. The predictions are aimed at providing valuable insights for water resource management.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Who can benefit from using HydroScope?</h3>
+                <p>The tool is designed for a wide range of users including farmers, researchers, environmentalists, policymakers, and anyone concerned with sustainable water management practices.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I use HydroScope for my region?</h3>
+                <p>Yes, HydroScope covers various states and districts in India. You can enter your state and district to access groundwater data specific to your area and view predictions and trends.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How accurate are the predictions?</h3>
+                <p>While HydroScope aims to provide accurate predictions based on available data, the results may vary due to the complexities of groundwater behavior and environmental factors. It's recommended to use the predictions as one of several tools for decision-making.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How frequently is the data updated?</h3>
+                <p>The data is updated periodically based on the availability of new information from reliable sources. Users are encouraged to check the application regularly for the latest updates.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is the service free to use?</h3>
+                <p>Yes, HydroScope offers free access to its basic features. However, premium features and advanced analytics may be available through subscription plans in the future.</p>
+            </div>
         </div>
     </div>
 <div id="chatbot-icon">
     <img src="./images/chatbot.png" alt="Chatbot" />
 </div>
+<!-- <script src="script.js"></script> -->
 </body>
 </html>
