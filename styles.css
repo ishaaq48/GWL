@@ -162,32 +162,65 @@ header {
     border-radius: 50%;
 }
 
-#about {
-    background: var(--back-color); /* Light gradient background */
-    padding: 60px 20px;
+#intro-section {
+    background-color: #e0f7fa; /* Your chosen background color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.intro-text {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.intro-text h2 {
+    color: #01579b; /* Header text color */
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.intro-text p {
+    color: #333333; /* Body text color */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.intro-stats {
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    padding-top: 20px;
+    border-top: 2px solid #00796b;
 }
 
-.about-item {
-    background: var(--button-color2); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    font-size: 16px;
-    margin: 2px;
-    color: var(--body-text);
-    
-}
-#about h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: var(--body-text);
+.stat-item {
+    text-align: center;
+    max-width: 200px;
 }
 
+.stat-item h3 {
+    color: #00796b; /* Primary color for numbers */
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.stat-item p {
+    color: #333333; /* Secondary text color */
+    font-size: 1em;
+}
 
 #features
 {
@@ -336,7 +369,7 @@ header {
         transform: translateX(0px);
     }
 }
-#about,#features,#faq{
+.intro-content,#features,#faq{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
