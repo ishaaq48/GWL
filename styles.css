@@ -1,0 +1,217 @@
+
+:root{
+    --back-color:#e0f7fa;
+    --head-text:#01579b;
+    --body-text:#333333;
+    --content-box:#ffffff;
+    --button-color:#00796b;
+    --button-color2:#a5d6a7;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* background-color: slateblue; */
+    
+}
+
+.navigation a
+{
+    text-decoration: none;
+    color: var(--body-text);
+    font-weight: 600;
+    position: relative;
+    padding: 0 5px;
+    text-align: center;
+    
+}
+.navigation a::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+}
+.navigation a:hover::after{
+    
+    width: 100%;
+}
+/* .wrapper{
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+} */
+.hero
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back-color);
+}
+.hero .hero-content {
+    max-width: 800px;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--body-text);
+    text-align: center;
+}
+.hero-content h1,p,a
+{
+    margin-bottom: 30px;
+}
+.hero-button {
+    background-color: #28a745; /* Green color for the button */
+    color: #fff;
+    margin: 20px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    
+}
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#about
+{
+    min-height: 50vh;
+    padding: 40px;
+    text-align: center;
+    background-color: var(--content-box);
+    /* color: var(--head-text); */
+}
+h2
+{
+    color: var(--head-text);
+}
+.about-list
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+.about-item
+{
+    background-color: var(--content-box);
+    color: var(--body-text);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.about-item:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 8px 20px rgba(182, 29, 29, 0.2);
+}
+#features
+{
+    min-height: 40vh;
+    padding: 40px;
+    /* background-image: url('./images/map.jpg');
+    background-size: cover;
+    background-position: center; */
+    
+}
+.feature-list
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    min-height: 60vh;
+    /* background-color: #28a745; */
+    padding: 20px;
+    
+}
+#features h2
+{
+    text-align: center;
+}
+.feature-item
+{
+    margin-right: 20px;
+    background-color: var(--content-box);
+    color: var(--body-text);
+    padding: 20px;   
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    height: fit-content;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature-item:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 8px 20px rgba(182, 29, 29, 0.2);
+}
+#predict
+{
+    max-width:250px;
+    margin-bottom: 15px;
+}
+.feature-item a
+{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--button-color);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+.main #stats
+{
+    height: 40vh;
+    
+}
+#stats h2
+{
+    text-align: center;
+}
+#faq
+{
+    height: 30vh;
+}
+
+#faq h2
+{
+    text-align: center;
+}
