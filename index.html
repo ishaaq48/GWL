@@ -4,50 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Groundwater Level Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>GWL</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="logo-container">
-                <img src="./images/location.png" alt="">
-                <h2>HydroScope</h2>
-            </div>
-            
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#intro-section">Intro</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </nav>   
-        </header>
-        <div id="hero">
-            <div class="hero-content">
-                <h1>Predict and Monitor Groundwater Levels Across India</h1>
+    <header>
+        <div id="logo-container">
+            <img src="./images/location.png" alt="" width="50">
+            <h1>HydroScope</h1>
+        </div>
+        <div id="navigation">
+            <a href="#hero">Home</a>
+            <a href="#intro-content">Intro</a>
+            <a href="#features">Features</a>
+            <a href="">Stats</a>
+            <a href="#faq">Faq</a>
+        </div>
+    </header>
+    <div id="hero">
+        <div id="hero-container">
+                <h1>Predict and Monitor Groundwater Levels</h1>
                 <p>Stay informed with accurate data and insights to manage water resources efficiently.</p>
                 <a href="#about" class="hero-button">Learn More</a>
-            </div>
         </div>
     </div>
-    <section id="intro-section">
-        <div class="intro-content">
-            <div class="intro-image">
-                <img src="./images/aquifer.png" alt="Groundwater Map" width="400px">
-            </div>
+    <div id="intro-section">
+        <div id="intro-content">
+            
             <div class="intro-text">
                 <h2>Leveraging Data to Predict Groundwater Levels</h2>
                 <p>Our groundwater level prediction web application uses data analytics and AI to help monitor and manage groundwater resources, ensuring sustainable water usage across various regions.</p>
             </div>
+            <div class="intro-image">
+                <img src="./images/hero_bg2.jpg" alt="Groundwater Map" width="400px">
+            </div>
         </div>
-        <div class="intro-stats">
+        <div id="intro-stats">
             <div class="stat-item">
                 <img src="./images/sea-waves.png" alt="Icon" width="50px">
                 <h3>60%</h3>
@@ -64,62 +57,107 @@
                 <p>of total irrigation water comes from groundwater.</p>
             </div>
         </div>
-    </section>
-    
-    
-        <div id="features">
-            <h2>Features</h2>
-    <div class="feature-list">
-        <div class="feature-item">
-            <img src="./images/prediction.jpg" alt="" id = "predict">
-            <h3>Prediction</h3>
-            <p>Accurate groundwater level predictions using machine learning to help manage water resources.</p>
-            <a href="#prediction" class="learn-more">Learn More</a>
+    </div>
+
+    <div id="features">
+        <div id="feature-middle">
+            <h2>
+                Features
+            </h2>
+            <img src="./images/features.jpg" alt="">
+            <div id="feature-middle-item">
+                <h3>Chatbot</h3>
+                <p>Get assistance and answers to your questions through an interactive chatbot.</p>
+                <a href="">Explore</a>
+            </div>
         </div>
-        <div class="feature-item">
-            <img src="./images/visualisation.jpg" alt="" id = "predict">
-            <h3>Visualization</h3>
-            <p>Interactive charts to compare groundwater levels across locations and spot trends.</p>
-            <a href="#visualization" class="learn-more">Learn More</a>
+        <div id="feature-left-top">
+            <div class="feature-left-item">
+                <h3>Map - Locate and Predict</h3>
+                <p>Identify groundwater levels on an interactive map and predict future trends.</p>
+                <a href="">Explore</a>
+            </div>
+            <div class="feature-left-item">
+                <h3>Visualization - Analysis</h3>
+                <p>Analyze groundwater data with dynamic charts and graphs for better insights.</p>
+                <a href="">Explore</a>
+            </div>
         </div>
-        <div class="feature-item">
-            <img src="./images/trend.jpg" alt="" id = "predict">
-            <h3>Trend Analysis</h3>
-            <p>Analyze historical data to understand long-term groundwater changes.</p>
-            <a href="#Analysis" class="learn-more">Learn More</a>
+        <div id="feature-left-bottom">
+            <div class="feature-left-item">
+                <h3>Forecast</h3>
+                <p>Forecast future groundwater levels based on historical trends and patterns.</p>
+                <a href="">Explore</a>
+            </div>
+            <div class="feature-left-item">
+                <h3>Comparison</h3>
+                <p>Compare groundwater levels across different regions and time periods.</p>
+                <a href="">Explore</a>
+            </div>
         </div>
-        <div class="feature-item">
-            <img src="./images/map.jpg" alt="" id = "predict">
-            <h3>Interactive Map</h3>
-            <p>Enter your state and district to zoom in on the map and view detailed groundwater data.</p>
-            <a href="#Analysis" class="learn-more">Learn More</a>
+    </div>
+    <div id="stat">
+        <h2>Statistics</h2>
+    <div id="stat-container">
+        
+        <div class="stat-image">
+            <img src="./images/aqufier.png" alt="Groundwater Map" width="400px">
+        </div>
+        <div class="stat-text">
+            <div class="intro-text-item">
+                <h3>Identification of Critical Changes</h3>
+                <p>The section helps to identify critical changes and patterns in groundwater levels.</p>
+            </div>
+            <div class="intro-text-item">
+                <h3>Real-Time Updates</h3>
+                <p> Access the latest data and real-time updates for a current view of groundwater status.</p>
+            </div>
+            <div class="intro-text-item">
+                <h3>Deeper Data Insights</h3>
+                <p>Dive deeper into the data to see the full picture.</p>
+            </div>
         </div>
         
     </div>
+    </div>
+    
+    <div id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is HydroScope?</h3>
+            <p>HydroScope is a web-based tool that helps users predict and monitor groundwater levels across various regions in India. It uses historical data and machine learning algorithms to provide insights into groundwater conditions.</p>
         </div>
-        <div id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What is HydroScope?</h3>
-                <p>HydroScope is a web-based tool that helps users predict and monitor groundwater levels across various regions in India. It uses historical data and machine learning algorithms to provide insights into groundwater conditions.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How does HydroScope predict groundwater levels?</h3>
-                <p>HydroScope leverages machine learning models trained on historical data, climate conditions, and other relevant factors to predict groundwater level trends. The predictions are aimed at providing valuable insights for water resource management.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Who can benefit from using HydroScope?</h3>
-                <p>The tool is designed for a wide range of users including farmers, researchers, environmentalists, policymakers, and anyone concerned with sustainable water management practices.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I use HydroScope for my region?</h3>
-                <p>Yes, HydroScope covers various states and districts in India. You can enter your state and district to access groundwater data specific to your area and view predictions and trends.</p>
-            </div>
+        <div class="faq-item">
+            <h3>How does HydroScope predict groundwater levels?</h3>
+            <p>HydroScope leverages machine learning models trained on historical data, climate conditions, and other relevant factors to predict groundwater level trends. The predictions are aimed at providing valuable insights for water resource management.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Who can benefit from using HydroScope?</h3>
+            <p>The tool is designed for a wide range of users including farmers, researchers, environmentalists, policymakers, and anyone concerned with sustainable water management practices.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I use HydroScope for my region?</h3>
+            <p>Yes, HydroScope covers various states and districts in India. You can enter your state and district to access groundwater data specific to your area and view predictions and trends.</p>
         </div>
     </div>
-<div id="chatbot-icon">
-    <img src="./images/chatbot1.png" alt="Chatbot" />
 </div>
-<!-- <script src="script.js"></script> -->
+<!-- <div id="chatbot-box">
+    <div id="chatbot-items">
+        <div id="chatbot-header">
+            <img src="./images/user_8763547.png" alt="" width="40px">
+            <h3>Bot</h3>
+        </div>
+        <div id="chatbot-content">
+
+        </div>
+        <div id="chatbot-entry">
+            <input type="text" placeholder="Write a message">
+
+        </div>
+        <div id="chatbot-icon">
+            <img src="./images/chatbot1.png" alt="Chatbot" width="50"/>
+        </div>
+    </div> -->
+</div>
 </body>
 </html>
