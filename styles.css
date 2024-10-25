@@ -10,6 +10,10 @@
      padding: 0;
      font-family: "Poppins", sans-serif;
  }
+ body
+ {
+    background-color: var(--color2);
+ }
  header
  {
      position: fixed; 
@@ -81,12 +85,16 @@
      font-weight: 500;
      max-width: 90px;
  }
+ #hero-container a:hover{
+    color: var(--color3);
+    background-color: var(--color4);
+ }
+
  #intro-section {
      background-color: var(--color2); /* Your chosen background color */
      color: var(--color3);
      padding: 50px 0;
      text-align: center;
-     
  }
  
  #intro-content {
@@ -212,15 +220,21 @@
  }
  .feature-left-item a
  {
-     
      color: var(--color1);
      padding: 6px;
      border-radius: 4px;
      text-decoration: none;
      font-weight: 500;
      max-width: 90px;
-     
+     border: 2px solid var(--color3);
  }
+
+ .feature-left-item a:hover
+ {
+    background-color: var(--color3);
+    color: var(--color2);
+ }
+
  .feature-left-item h3{
      font-weight: 600;
      color: var(--color1);
@@ -232,6 +246,7 @@
  }
  .feature-left-item h3,p,a{
     padding: 6px;
+    
  }
  #stat{
      background-color: var(--color2);
@@ -260,10 +275,7 @@
      display: flex;
      justify-content: space-evenly;
  }
- #stat a
- {
-    color: var(--color1);
- }
+
  .stat-text
  {
      display: flex;
@@ -277,6 +289,21 @@
  .intro-text-item p{
      color: var(--color3);
  }
+ .intro-text-item a
+ {
+    padding: 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    max-width: 90px;
+    color: var(--color1);
+    border: 2px solid var(--color3);
+ }
+ .intro-text-item a:hover
+ {
+    background-color: var(--color3);
+    color: var(--color2);
+ } 
  #faq {
      padding: 40px;
      text-align: left;
